@@ -1,0 +1,556 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">HELLO, I'M</p>
+
+            <h1>Harikrishnan S</h1>
+
+            <h2>Generative AI Developer</h2>
+
+            <p>
+                I'm an aspiring Generative AI Developer and M.Sc. IT student
+                passionate about building intelligent applications using
+                Python, Large Language Models, Retrieval-Augmented Generation
+                and modern AI technologies.
+            </p>
+
+       <div class="hero-buttons">
+
+    <a href="#projects" class="btn primary-btn">
+        Explore My Work
+    </a>
+
+    <a href="#contact" class="btn secondary-btn">
+        Get In Touch
+    </a>
+
+    <a
+        href="{{ url_for('static', filename='resume/Harikrishnan_S_Resume.pdf') }}"
+        class="btn secondary-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        View My Resume
+    </a>
+
+</div>
+
+        </div>
+
+        <div class="hero-image-container">
+
+            <img
+                src="{{ url_for('static', filename='images/profile.jpg') }}"
+                alt="Harikrishnan S - Generative AI Developer"
+                class="hero-image"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT SECTION
+========================= -->
+
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">GET TO KNOW ME</p>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                I am Harikrishnan S, an aspiring Generative AI Developer
+                currently pursuing my M.Sc. in Information Technology.
+                I am interested in developing practical AI-powered
+                applications that solve real-world problems.
+            </p>
+
+            <p>
+                My technical interests include Generative AI, Large Language
+                Models, Retrieval-Augmented Generation, AI agents and
+                intelligent application development.
+            </p>
+
+            <p>
+                I enjoy learning new technologies, experimenting with AI
+                frameworks and transforming ideas into working projects.
+                My goal is to grow as an AI developer and contribute to
+                innovative technology solutions.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS SECTION
+========================= -->
+
+<section id="skills" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">MY TECHNICAL EXPERTISE</p>
+            <h2>Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <p>Python, SQL</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Generative AI</h3>
+                <p>LLMs, RAG, Prompt Engineering, AI Agents</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>AI Frameworks</h3>
+                <p>LangChain, LangGraph, LlamaIndex</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Vector Databases</h3>
+                <p>FAISS, ChromaDB, Pinecone</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Application Development</h3>
+                <p>Streamlit, FastAPI</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Databases</h3>
+                <p>MySQL, MongoDB, SQLite</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tools & Technologies</h3>
+                <p>Git, GitHub, Docker Basics, Postman</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Machine Learning Tools</h3>
+                <p>Hugging Face, Sentence Transformers</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS SECTION
+========================= -->
+
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">WHAT I'VE BUILT</p>
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-content">
+
+                    <span class="project-number">01</span>
+
+                    <h3>ResearchIQ</h3>
+
+                    <p>
+                        An AI-powered academic research analysis platform
+                        designed to help users explore research documents,
+                        retrieve relevant information and generate
+                        intelligent responses using Retrieval-Augmented
+                        Generation.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>RAG</span>
+                        <span>ChromaDB</span>
+                        <span>MongoDB Atlas</span>
+                        <span>Ollama</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-content">
+
+                    <span class="project-number">02</span>
+
+                    <h3>AI Code Companion</h3>
+
+                    <p>
+                        An AI-powered coding assistant that helps developers
+                        generate Python code, understand programming logic,
+                        explain existing code and identify potential errors
+                        using Large Language Models.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Ollama</span>
+                        <span>Qwen 2.5</span>
+                        <span>SQLite</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <div class="project-content">
+
+                    <span class="project-number">03</span>
+
+                    <h3>PrepAI - Interview Platform</h3>
+
+                    <p>
+                        A web-based mock interview platform designed to
+                        support interview preparation through AI-assisted
+                        interview practice and an interactive user experience.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Generative AI</span>
+                        <span>Web Development</span>
+
+                    </div>
+
+                    <a
+                        href="https://github.com/HarikrishnanS1713/PrepAI-Interview-Platform"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View on GitHub →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE SECTION
+========================= -->
+
+<section id="experience" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">MY PROFESSIONAL JOURNEY</p>
+            <h2>Experience</h2>
+        </div>
+
+        <div class="experience-card">
+
+            <div class="experience-header">
+
+                <div>
+
+                    <h3>Generative AI Intern</h3>
+
+                    <h4>Entrust Software & IT Services</h4>
+
+                    <p>Perungalathur, Chennai</p>
+
+                </div>
+
+                <span class="experience-duration">
+                    June 2025 – October 2025
+                </span>
+
+            </div>
+
+            <p>
+                Completed a five-month internship focused on Generative AI.
+                Gained practical exposure to AI technologies and application
+                development while learning how Generative AI concepts can
+                be applied to real-world use cases.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EDUCATION SECTION
+========================= -->
+
+<section id="education" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">MY ACADEMIC BACKGROUND</p>
+            <h2>Education</h2>
+        </div>
+
+        <div class="education-card">
+
+            <h3>Master of Science in Information Technology</h3>
+
+            <h4>Srikrishna Arts and Science College</h4>
+
+            <p>Coimbatore</p>
+
+            <p>July 2025 – Present</p>
+
+            <p class="education-score">
+                CGPA: 6.7 / 10
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CERTIFICATIONS SECTION
+========================= -->
+
+<section id="certifications" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">CONTINUOUS LEARNING</p>
+            <h2>Certifications & Training</h2>
+        </div>
+
+        <div class="certifications-grid">
+
+
+            <!-- CERTIFICATION 1 -->
+
+            <div class="certification-card">
+
+                <h3>Generative AI Training</h3>
+
+                <h4>AIMORE Technologies</h4>
+
+                <p>
+                    Training focused on Generative AI concepts,
+                    Python, LangChain, LangGraph, Hugging Face,
+                    Retrieval-Augmented Generation, Pinecone
+                    and FastAPI.
+                </p>
+
+                <span>June 2026 – October 2026</span>
+
+            </div>
+
+
+            <!-- CERTIFICATION 2 -->
+
+            <div class="certification-card">
+
+                <h3>AI Tools & Claude Workshop</h3>
+
+                <h4>be10x</h4>
+
+                <p>
+                    Workshop covering AI-powered presentations,
+                    data analysis, coding and debugging using
+                    modern AI tools.
+                </p>
+
+                <span>October 7, 2026</span>
+
+                <a
+                    href="{{ url_for('static', filename='certificates/be10x_certificate.pdf') }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    View Certificate →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+
+<section id="contact" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-subtitle">LET'S CONNECT</p>
+            <h2>Get In Touch</h2>
+        </div>
+
+        <div class="contact-content">
+
+            <p>
+                I'm always interested in connecting with professionals,
+                discussing innovative technologies and exploring
+                opportunities in Generative AI and software development.
+                Feel free to reach out!
+            </p>
+
+            <div class="contact-links">
+
+                <!-- EMAIL -->
+
+                <a href="mailto:harikrishnans1712@gmail.com"
+                   class="contact-item">
+
+                    <span>📧</span>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>harikrishnans1712@gmail.com</p>
+                    </div>
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+
+                <a href="https://www.linkedin.com/in/harikrishnans04/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-item">
+
+                    <span>💼</span>
+
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me professionally</p>
+                    </div>
+
+                </a>
+
+
+                <!-- GITHUB -->
+
+                <a href="https://github.com/HarikrishnanS1713"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-item">
+
+                    <span>🐙</span>
+
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>Explore my projects and repositories</p>
+                    </div>
+
+                </a>
+
+
+                <!-- LOCATION -->
+
+                <div class="contact-item">
+
+                    <span>📍</span>
+
+                    <div>
+                        <h3>Location</h3>
+                        <p>Chennai, Tamil Nadu, India</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESUME BUTTON -->
+
+            <div class="contact-resume">
+
+                <a
+                    href="{{ url_for('static', filename='resume/Harikrishnan_S_Resume.pdf') }}"
+                    class="btn primary-btn"
+                    download
+                >
+                    Download My Resume
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
